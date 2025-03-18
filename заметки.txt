@@ -1,0 +1,10 @@
+systemctl enable docker.service
+systemctl start docker.service
+systemctl start docker.socket
+
+// wsl
+sudo apt install docker.io
+sudo apt install docker-compose
+sudo usermod -aG docker $USER
+newgrp docker
+docker ps
