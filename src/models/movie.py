@@ -13,7 +13,7 @@ class MoviePublic(MovieBase):
 class MovieUpdate(MovieBase):
     name: str | None = None
     description: str | None = None
-    year_release: int | None = None
+    year_release: int | None = Field(ge=1895, le=date.today().year, default=None)
 
 class Movie(MovieBase, table=True):
     id: int | None = Field(primary_key=True, default=None)
