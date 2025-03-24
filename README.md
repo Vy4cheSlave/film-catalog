@@ -8,6 +8,7 @@
 - SQLAlchemy или другой ORM (SQLModel)
 - SQLite или любая реляционная база данных (PostgreSQL)
 - Pydantic для валидации данных
+- Docker (docker-compose)
 
 # Шаги запуска
 1. Клонировать репозиторий:
